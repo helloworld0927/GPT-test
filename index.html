@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Recorder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Screen Recorder</h1>
+    <div id="controls">
+        <button id="start">Start Recording</button>
+        <button id="pause" disabled>Pause</button>
+        <button id="resume" disabled>Resume</button>
+        <button id="stop" disabled>Stop</button>
+        <label><input type="checkbox" id="mic"> Use microphone</label>
+    </div>
+    <video id="preview" controls style="display:none;"></video>
+    <a id="download" download="recording.webm" style="display:none;">Download</a>
+    <script src="script.js"></script>
+</body>
+</html>
